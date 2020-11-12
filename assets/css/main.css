@@ -10417,22 +10417,6 @@ textarea {
   margin-top: 0.5rem;
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .card-columns {
-    column-count: 2;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .card-columns {
-    column-count: 3;
-  }
-}
-@media (min-width: 1200px) {
-  .card-columns {
-    column-count: 4;
-  }
-}
-
 @media (min-width: 576px) {
   .boton {
     display: inline-block;
@@ -10512,6 +10496,10 @@ textarea {
   .logo {
     margin-right: 15rem;
   }
+
+  iframe {
+    width: 100% !important;
+  }
 }
 @media (min-width: 768px) {
   .iconos-sobre-mi {
@@ -10529,5 +10517,9 @@ textarea {
 
   .navegacion a {
     font-size: 1.5rem;
+  }
+
+  iframe {
+    width: 70rem;
   }
 }

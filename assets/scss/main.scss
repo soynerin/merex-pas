@@ -426,17 +426,6 @@ textarea {
         margin-top: 0.5rem;
     }
 }
-.card-columns {
-    @include media-breakpoint-only(sm) {
-        column-count: 2;
-    }    
-    @include media-breakpoint-only(lg) {
-      column-count: 3;
-    }
-    @include media-breakpoint-only(xl) {
-      column-count: 4;
-    }
-}
 @media (min-width: 576px) {
     .boton {
         display: inline-block;
@@ -513,6 +502,9 @@ textarea {
     .logo {
         margin-right: 15rem;
     }
+    iframe {
+        width: 100% !important;
+    }
 }
 @media (min-width: 768px) {
     .iconos-sobre-mi {
@@ -528,5 +520,8 @@ textarea {
     }
     .navegacion a {
         font-size: 1.5rem;
+    }
+    iframe {
+        width: 70rem;
     }
 }
