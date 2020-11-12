@@ -10139,7 +10139,7 @@ img:hover {
   margin-top: 10rem;
 }
 .contenido-header h1 {
-  font-size: 10rem;
+  font-size: 9rem;
   color: #ffffff !important;
   margin-bottom: 0rem;
 }
@@ -10289,13 +10289,24 @@ i {
 }
 
 .contenedor-testimonios__avatar-name {
-  color: #0057A7;
+  color: #ffffff;
   font-size: 2.5rem;
+  background-color: #0057A7;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.contenedor-testimonios__avatar-job {
+  color: #ffffff;
+  font-size: 1.5rem;
+  background-color: #002957;
+  padding: 0.5rem;
+  border-radius: 1rem;
 }
 
 blockquote {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .contenedor-blog {
@@ -10446,7 +10457,11 @@ textarea {
     margin-right: 0rem;
   }
 
+  .contenido-header h1 {
+    font-size: 12rem;
+  }
   .contenido-header h2 {
+    font-size: 9rem;
     margin-bottom: 10rem;
   }
 
@@ -10510,5 +10525,9 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+  }
+
+  .navegacion a {
+    font-size: 1.5rem;
   }
 }
