@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -55,7 +57,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -5533,7 +5535,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5635,7 +5637,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Montserrat", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -9938,7 +9940,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   font-size: 1.6rem;
 }
 
@@ -9950,7 +9952,7 @@ body {
 
 h1 {
   font-size: 4.8rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Fredoka One", cursive !important;
   animation: fadeInLeft;
   animation-duration: 2s;
 }
@@ -9959,12 +9961,14 @@ h2 {
   font-size: 4.4rem !important;
   animation: fadeInRight;
   animation-duration: 2s;
-  font-family: "Chewy", cursive;
+  font-family: "Fredoka One", cursive;
+  font-weight: 400;
 }
 
 h3 {
   font-size: 4rem;
-  font-family: "Chewy", cursive;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
 
 img {
@@ -9979,14 +9983,6 @@ img:hover {
   margin-top: 10rem;
   margin-bottom: 10rem;
   color: #6c757d !important;
-}
-
-.fw-300 {
-  font-weight: 300;
-}
-
-.fw-900 {
-  font-weight: 900;
 }
 
 .m-t-5 {
@@ -10010,7 +10006,7 @@ img:hover {
 }
 
 .text-primary {
-  color: #0057A7 !important;
+  color: #0057a7 !important;
 }
 
 .boton {
@@ -10047,7 +10043,7 @@ img:hover {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
-  background: #0057A7;
+  background: #0057a7;
   transition-property: color;
   transition-duration: 0.3s;
 }
@@ -10108,7 +10104,7 @@ img:hover {
 }
 
 .site-header {
-  background-image: linear-gradient(to right, #0057A7, #0964b7, #1272c8, #1880d8, #1e8ee9, #208ae1, #2285da, #2381d2, #1e69b2, #165392, #0b3d74, #002957);
+  background-image: linear-gradient(to right, #0057a7, #0964b7, #1272c8, #1880d8, #1e8ee9, #208ae1, #2285da, #2381d2, #1e69b2, #165392, #0b3d74, #002957);
   padding: 1rem 0rem 3rem 0rem;
 }
 
@@ -10120,7 +10116,7 @@ img:hover {
   min-height: 80rem;
 }
 .site-header.inicio h2 {
-  font-family: "Chewy", cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 .contenedor-inicio {
@@ -10250,7 +10246,7 @@ img:hover {
 }
 
 i {
-  color: #0057A7;
+  color: #0057a7;
 }
 
 .ver-todas {
@@ -10291,7 +10287,7 @@ i {
 .contenedor-testimonios__avatar-name {
   color: #ffffff;
   font-size: 2.5rem;
-  background-color: #0057A7;
+  background-color: #0057a7;
   padding: 0.5rem;
   border-radius: 1rem;
 }
@@ -10339,7 +10335,7 @@ blockquote {
   margin-top: 1rem;
   width: 25rem;
   height: 0.5rem;
-  background-color: #0057A7;
+  background-color: #0057a7;
 }
 .contenedor_blog__entrada-descripcion p {
   text-align: justify;

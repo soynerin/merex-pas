@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 @import "../scss/components/variables";
 @import "../scss/components/mixins";
 @import "../scss/bootstrap/bootstrap.scss";
 
 html {
     font-size: 62.5%;
-    box-sizing: border-box;    
+    box-sizing: border-box;
 }
 * {
     box-sizing: inherit;
@@ -16,7 +18,7 @@ html {
     }
 }
 body {
-    font-family: $font-family-base !important;
+    font-family: $font-family-body !important;
     font-size: 1.6rem;
 }
 .contenedor {
@@ -26,19 +28,21 @@ body {
 }
 h1 {
     font-size: 4.8rem;
-    font-family: $font-family-base;
+    font-family: $font-family-title !important;
     animation: fadeInLeft;
     animation-duration: 2s;
 }
 h2 {
     font-size: 4.4rem !important;
     animation: fadeInRight;
-    animation-duration: 2s;    
+    animation-duration: 2s;
     font-family: $font-family-title;
+    font-weight: 400;
 }
 h3 {
     font-size: 4rem;
-    font-family: $font-family-title;
+    font-family: $font-family-body;
+    font-weight: 700;
 }
 img {
     max-width: 100%;
@@ -51,12 +55,6 @@ img {
     margin-top: 10rem;
     margin-bottom: 10rem;
     color: $title-color;
-}
-.fw-300 {
-    font-weight: 300;
-}
-.fw-900 {
-    font-weight: 900;
 }
 .m-t-5 {
     margin-top: 5rem;
@@ -83,11 +81,11 @@ img {
 .boton {
     @include button(#ffffff, 2rem);
 }
-.boton-modal{
+.boton-modal {
     @include button(#ffffff, 1rem);
 }
 .boton-azul {
-    @include button-primary($primary-color, #ffffff);    
+    @include button-primary($primary-color, #ffffff);
 }
 .boton-naranja {
     @include button-secondary($tertiary-color, $secondary-color);
@@ -116,8 +114,8 @@ img {
     background-size: cover;
     height: 100vh;
     min-height: 80rem;
-    h2{
-        font-family: $font-family-title;
+    h2 {
+        font-family: $font-family-body;
     }
 }
 .contenedor-inicio {
@@ -255,7 +253,7 @@ img {
     animation: backInLeft;
     animation-duration: 2s;
 }
-.iconos-sobre-mi_titulo--uppercase{
+.iconos-sobre-mi_titulo--uppercase {
     text-transform: uppercase;
 }
 i {
@@ -297,14 +295,14 @@ i {
     color: #ffffff;
     font-size: 2.5rem;
     background-color: $primary-color;
-    padding: .5rem;
+    padding: 0.5rem;
     border-radius: 1rem;
 }
-.contenedor-testimonios__avatar-job{
+.contenedor-testimonios__avatar-job {
     color: #ffffff;
     font-size: 1.5rem;
     background-color: $secondary-color;
-    padding: .5rem;
+    padding: 0.5rem;
     border-radius: 1rem;
 }
 blockquote {
@@ -378,9 +376,9 @@ blockquote {
     padding: 3rem 0rem;
     text-align: center;
 }
-.contenedor-sobre-mi__imagen{
-    img{
-        &:hover{
+.contenedor-sobre-mi__imagen {
+    img {
+        &:hover {
             transform: scale(1);
         }
     }
@@ -453,7 +451,7 @@ textarea {
         h1 {
             font-size: 12rem;
         }
-        h2{
+        h2 {
             font-size: 9rem;
             margin-bottom: 10rem;
         }
@@ -466,7 +464,7 @@ textarea {
         img {
             width: 5%;
         }
-    }    
+    }
     .contenedor_blog__entrada {
         display: flex;
         justify-content: space-between;
