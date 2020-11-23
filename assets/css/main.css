@@ -10332,44 +10332,6 @@ img {
   min-height: 7rem;
 }
 
-.navegacion a {
-  text-decoration: none;
-  font-size: 2.2rem;
-  color: #ffffff;
-  display: block !important;
-  display: inline-block;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 0.8rem;
-}
-.navegacion a:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  left: 51%;
-  right: 51%;
-  bottom: 0;
-  background: #2098d1;
-  height: 0.4rem;
-  transition-property: left, right;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-}
-.navegacion a:hover:before {
-  left: 0;
-  right: 0;
-}
-.navegacion a:focus:before {
-  left: 0;
-  right: 0;
-}
-.navegacion a:active:before {
-  left: 0;
-  right: 0;
-}
-
 .iconos-sobre-mi__icono {
   text-align: center;
   animation: backInLeft;
@@ -10479,9 +10441,11 @@ blockquote {
 .footer {
   background: #152f4f;
   color: white;
+  text-align: center;
 }
 .footer .links {
   margin-bottom: 2rem;
+  display: none;
 }
 .footer .links ul {
   list-style-type: none;
@@ -10670,5 +10634,13 @@ textarea {
 
   iframe {
     width: 70rem;
+  }
+}
+@media (min-width: 992px) {
+  .footer {
+    text-align: unset;
+  }
+  .footer .links {
+    display: block;
   }
 }

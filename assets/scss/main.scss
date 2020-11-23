@@ -195,55 +195,6 @@ img {
 .navbar {
     min-height: 7rem;
 }
-.navegacion {
-    a {
-        text-decoration: none;
-        font-size: 2.2rem;
-        color: #ffffff;
-        display: block !important;
-        display: inline-block;
-        -webkit-transform: perspective(1px) translateZ(0);
-        transform: perspective(1px) translateZ(0);
-        box-shadow: 0 0 1px rgba(#000000, 0);
-        position: relative;
-        overflow: hidden;
-        padding-bottom: 0.8rem;
-        &:before {
-            content: "";
-            position: absolute;
-            z-index: -1;
-            left: 51%;
-            right: 51%;
-            bottom: 0;
-            background: #2098d1;
-            height: 0.4rem;
-            -webkit-transition-property: left, right;
-            transition-property: left, right;
-            -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
-            -webkit-transition-timing-function: ease-out;
-            transition-timing-function: ease-out;
-        }
-        &:hover {
-            &:before {
-                left: 0;
-                right: 0;
-            }
-        }
-        &:focus {
-            &:before {
-                left: 0;
-                right: 0;
-            }
-        }
-        &:active {
-            &:before {
-                left: 0;
-                right: 0;
-            }
-        }
-    }
-}
 .iconos-sobre-mi__icono {
     text-align: center;
     animation: backInLeft;
@@ -341,9 +292,10 @@ blockquote {
 .footer {
     background: #152f4f;
     color: white;
-
+    text-align: center;;
     .links {
         margin-bottom: 2rem;
+        display: none;
         ul {
             list-style-type: none;
         }
@@ -525,5 +477,14 @@ textarea {
     }
     iframe {
         width: 70rem;
+    }
+}
+@media (min-width: 992px) {
+    .footer
+    {
+        text-align: unset;
+        .links{
+            display: block;
+        }
     }
 }
