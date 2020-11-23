@@ -10093,13 +10093,13 @@ h1 {
   font-size: 4.8rem;
   font-family: "Fredoka One", cursive !important;
   animation: fadeInLeft;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 }
 
 h2 {
   font-size: 4.4rem !important;
   animation: fadeInRight;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   font-family: "Fredoka One", cursive;
   font-weight: 400;
 }
@@ -10292,7 +10292,7 @@ img {
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   animation: fadeInUp;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 }
 .boton-header:before {
   content: "";
@@ -10335,7 +10335,7 @@ img {
 .iconos-sobre-mi__icono {
   text-align: center;
   animation: backInLeft;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 }
 
 .iconos-sobre-mi_titulo--uppercase {
