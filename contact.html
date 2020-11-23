@@ -64,9 +64,10 @@
                 Dejame tu consulta
             </h3>
             <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
-                <input name="name" type="text" value="" class="contact_input" placeholder="Nombre" />
+                <input name="name" type="text" value="" class="contact_input" placeholder="Nombre" required />
 
-                <input name="email" type="email" value="" class="contact_input" placeholder="Correo Electrónico" />
+                <input name="email" type="email" value="" class="contact_input" placeholder="Correo Electrónico"
+                    required />
 
                 <input name="phoneNumber" type="tel" value="" class="contact_input" placeholder="Teléfono" />
 
@@ -81,11 +82,11 @@
                     </option>
                 </select>
 
-                <textarea cols="80" rows="10" class="contact_input" placeholder="Dejame tu mensaje..."
-                    name="message"></textarea>
+                <textarea cols="80" rows="10" class="contact_input" placeholder="Dejame tu mensaje..." name="message"
+                    required></textarea>
 
+                <div data-netlify-recaptcha="true"></div>
                 <div class="contenedor-contacto__botones">
-                    <div data-netlify-recaptcha="true"></div>
                     <button type="submit" value="Submit" class="boton boton-naranja">
                         Enviar
                     </button>
