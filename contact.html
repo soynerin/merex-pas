@@ -63,7 +63,7 @@
             <h3 class="text-center mb-5 text-secondary">
                 Dejame tu consulta
             </h3>
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                 <input name="name" type="text" value="" class="contact_input" placeholder="Nombre" />
 
                 <input name="email" type="email" value="" class="contact_input" placeholder="Correo Electrónico" />
@@ -85,9 +85,7 @@
                     name="message"></textarea>
 
                 <div class="contenedor-contacto__botones">
-                    <button type="reset" value="reset" class="boton boton-azul">
-                        Limpiar
-                    </button>
+                    <div data-netlify-recaptcha="true"></div>
                     <button type="submit" value="Submit" class="boton boton-naranja">
                         Enviar
                     </button>
