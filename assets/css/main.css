@@ -10334,8 +10334,6 @@ img {
 
 .iconos-sobre-mi__icono {
   text-align: center;
-  animation: backInLeft;
-  animation-duration: 1.5s;
 }
 
 .iconos-sobre-mi_titulo--uppercase {
