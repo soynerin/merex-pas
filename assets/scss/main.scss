@@ -337,41 +337,49 @@ blockquote {
         text-align: justify;
     }
 }
+
 .footer {
-    margin-bottom: 0;
-    background-image: linear-gradient(
-        to right,
-        #002957,
-        #003666,
-        #004475,
-        #005284,
-        #006093,
-        #006093,
-        #006093,
-        #006093,
-        #005284,
-        #004475,
-        #003666,
-        #002957
-    );
-    a {
-        color: #ffffff;
-        &:hover {
-            color: #d9eafe;
+    background: #152f4f;
+    color: white;
+
+    .links {
+        margin-bottom: 2rem;
+        ul {
+            list-style-type: none;
+        }
+        li a {
+            color: white;
+            transition: color 0.2s;
+            &:hover {
+                text-decoration: none;
+                color: #4180cb;
+            }
         }
     }
-    p {
-        margin: 0;
-        color: #ffffff;
+    .about-company {
+        margin-bottom: 2rem;
+        i {
+            font-size: 25px;
+        }
+        a {
+            color: white;
+            transition: color 0.2s;
+            &:hover {
+                color: #4180cb;
+            }
+        }
     }
-    nav {
-        display: none;
+    .location {
+        margin-bottom: 2rem;
+        i {
+            font-size: 18px;
+        }
+    }
+    .copyright p {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
-.contenedor-footer {
-    padding: 3rem 0rem;
-    text-align: center;
-}
+
 .contenedor-sobre-mi__imagen {
     img {
         &:hover {
