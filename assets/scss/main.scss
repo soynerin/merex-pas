@@ -71,16 +71,19 @@ img {
     color: $primary-color !important;
 }
 .boton {
-    @include button(#ffffff, 2rem);
+    @include button(#ffffff, 1.2rem);
 }
 .boton-modal {
-    @include button(#ffffff, 1rem);
+    @include button(#ffffff, 1.5rem);
 }
 .boton-azul {
     @include button-primary($primary-color, #ffffff);
 }
 .boton-naranja {
     @include button-secondary($tertiary-color, $secondary-color);
+}
+.boton-verde {
+    @include button-secondary($verde, $secondary-color);
 }
 .site-header {
     background-image: linear-gradient(

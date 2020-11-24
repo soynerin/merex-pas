@@ -4412,7 +4412,7 @@ input[type=button].btn-block {
 .card-body {
   flex: 1 1 auto;
   min-height: 1px;
-  padding: 1.25rem;
+  padding: 0.25rem;
 }
 
 .card-title {
@@ -4432,11 +4432,11 @@ input[type=button].btn-block {
   text-decoration: none;
 }
 .card-link + .card-link {
-  margin-left: 1.25rem;
+  margin-left: 0.25rem;
 }
 
 .card-header {
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 0.25rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
@@ -4446,7 +4446,7 @@ input[type=button].btn-block {
 }
 
 .card-footer {
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 0.25rem;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
@@ -4455,15 +4455,15 @@ input[type=button].btn-block {
 }
 
 .card-header-tabs {
-  margin-right: -0.625rem;
+  margin-right: -0.125rem;
   margin-bottom: -0.75rem;
-  margin-left: -0.625rem;
+  margin-left: -0.125rem;
   border-bottom: 0;
 }
 
 .card-header-pills {
-  margin-right: -0.625rem;
-  margin-left: -0.625rem;
+  margin-right: -0.125rem;
+  margin-left: -0.125rem;
 }
 
 .card-img-overlay {
@@ -10145,8 +10145,8 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 2rem;
-  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  padding: 1rem 1.2rem;
   margin-top: 3rem;
   text-align: center;
   display: block;
@@ -10159,8 +10159,8 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1rem;
-  padding: 1rem 3rem;
+  font-size: 1.5rem;
+  padding: 1rem 1.2rem;
   margin-top: 3rem;
   text-align: center;
   display: block;
@@ -10231,6 +10231,27 @@ img {
   border-radius: 1em;
 }
 .boton-naranja:active {
+  border-radius: 1em;
+}
+
+.boton-verde {
+  background-color: #4DC247;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: border-radius;
+}
+.boton-verde:hover {
+  border-radius: 1em;
+  text-decoration: none;
+  color: #002957;
+}
+.boton-verde:focus {
+  border-radius: 1em;
+}
+.boton-verde:active {
   border-radius: 1em;
 }
 
