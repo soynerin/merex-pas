@@ -10,6 +10,7 @@
     display: block;
     flex: 0 0 100%;
     font-family: $font-family-button;
+    border-radius: .5rem;
 }
 
 @mixin button-primary($background-color, $color) {

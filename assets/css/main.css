@@ -10152,6 +10152,7 @@ img {
   display: block;
   flex: 0 0 100%;
   font-family: "Roboto", sans-serif;
+  border-radius: 0.5rem;
 }
 
 .boton-modal {
@@ -10166,6 +10167,7 @@ img {
   display: block;
   flex: 0 0 100%;
   font-family: "Roboto", sans-serif;
+  border-radius: 0.5rem;
 }
 
 .boton-azul {
