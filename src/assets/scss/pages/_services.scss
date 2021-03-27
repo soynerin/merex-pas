@@ -1,0 +1,42 @@
+.single_services {
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+
+  &:hover i {
+    -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  i {
+    font-size: 40px;
+    color: #02986a;
+    background: #fff;
+    width: 85px;
+    height: 85px;
+    line-height: 85px;
+    border-radius: 50%;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+  }
+
+  .services_title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #38424d;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  p {
+    margin-top: 20px;
+    color: #fff;
+  }
+
+  .services_descripcion {
+    background-color: #38424d;
+    padding: 5px;
+  }
+}
