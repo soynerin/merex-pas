@@ -1,20 +1,19 @@
 <div class="modal fade" id="modalSeguro" data-backdrop="static" data-keyboard="false" tabindex="-1"
-aria-labelledby="modalSeguroLabel" aria-hidden="true">
-<div class="modal-lg modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-        <div class="modal-header">
-            <h3 class="modal-title text-secondary" id="staticBackdropLabel"></h3>
-        </div>
-        <img src="" alt="merex pas seguro">
-        <div class="modal-body">
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-merex" data-dismiss="modal">
-                Aceptar
-            </button>
+    aria-labelledby="modalSeguroLabel" aria-hidden="true">
+    <div class="modal-lg modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title text-secondary" id="staticBackdropLabel">{{ seguros?.nombre }}</h3>
+            </div>
+            <img [src]="seguros?.modal?.imgUrl" [alt]="seguros?.imgAlt">
+            <div class="modal-body"> {{ seguros?.modal?.description }} </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-merex" data-dismiss="modal">
+                    Aceptar
+                </button>
+            </div>
         </div>
     </div>
-</div>
 </div>
 
 
@@ -31,117 +30,20 @@ aria-labelledby="modalSeguroLabel" aria-hidden="true">
     </div> <!-- container -->
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6" *ngFor="let seguro of insuranceService.seguros">
                 <div class="single_project">
                     <div class="project_image">
-                        <img src="#" alt="seguros hogar merex pas">
+                        <img [src]="seguro.imgUrl" [alt]="seguro.imgAlt">
                     </div>
                     <div class="project_content">
-                        <h6 class="sub_title">Hogar</h6>
-                        <h4 class="title"><a href="#">Más Información</a></h4>
-                        <a class="plus image-popup" href="#">
+                        <h6 class="sub_title">{{ seguro.nombre }}</h6>
+                        <h4 class="title"><a (click)="mostrarModal( seguro )" data-whatever="@mdo">Más Información</a>
+                        </h4>
+                        <a class="plus" (click)="mostrarModal( seguro )">
                             <i class="lni lni-plus"></i>
                         </a>
                     </div>
-                </div> <!-- single project -->
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single_project">
-                    <div class="project_image">
-                        <img src="#"alt="seguros accidentes personales merex pas">
-                    </div>
-                    <div class="project_content">
-                        <h6 class="sub_title">Accidentes Personales</h6>
-                        <h4 class="title"><a href="#">Más Información</a></h4>
-                        <a class="plus image-popup" href="#">
-                            <i class="lni lni-plus"></i>
-                        </a>
-                    </div>
-                </div> <!-- single project -->
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single_project">
-                    <div class="project_image">
-                        <img src="#" alt="seguros automotor merex pas">
-                    </div>
-                    <div class="project_content">
-                        <h6 class="sub_title">Automotor</h6>
-                        <h4 class="title"><a href="#">Más Información</a></h4>
-                        <a class="plus image-popup" href="#">
-                            <i class="lni lni-plus"></i>
-                        </a>
-                    </div>
-                </div> <!-- single project -->
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single_project">
-                    <div class="project_image">
-                        <img src="#" alt="seguros motos merex pas">
-                    </div>
-                    <div class="project_content">
-                        <h6 class="sub_title">Motos</h6>
-                        <h4 class="title"><a href="#">Más Información</a></h4>
-                        <a class="plus image-popup" href="#">
-                            <i class="lni lni-plus"></i>
-                        </a>
-                    </div>
-                </div> <!-- single project -->
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single_project">
-                    <div class="project_image">
-                        <img src="#" alt="seguros bicicleta merex pas">
-                    </div>
-                    <div class="project_content">
-                        <h6 class="sub_title">Bici</h6>
-                        <h4 class="title"><a href="#">Más Información</a></h4>
-                        <a class="plus image-popup" href="#">
-                            <i class="lni lni-plus"></i>
-                        </a>
-                    </div>
-                </div> <!-- single project -->
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single_project">
-                    <div class="project_image">
-                        <img src="#" alt="seguros caucion merex pas">
-                    </div>
-                    <div class="project_content">
-                        <h6 class="sub_title">Caución</h6>
-                        <h4 class="title"><a href="#">Más Información</a></h4>
-                        <a class="plus image-popup" href="#">
-                            <i class="lni lni-plus"></i>
-                        </a>
-                    </div>
-                </div> <!-- single project -->
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single_project">
-                    <div class="project_image">
-                        <img src="#" alt="seguros vida merex pas">
-                    </div>
-                    <div class="project_content">
-                        <h6 class="sub_title">Vida</h6>
-                        <h4 class="title"><a href="#">Más Información</a></h4>
-                        <a class="plus image-popup" href="#">
-                            <i class="lni lni-plus"></i>
-                        </a>
-                    </div>
-                </div> <!-- single project -->
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single_project">
-                    <div class="project_image">
-                        <img src="#" alt="seguros varios merex pas">
-                    </div>
-                    <div class="project_content">
-                        <h6 class="sub_title">También Existen</h6>
-                        <h4 class="title"><a href="#">Más Información</a></h4>
-                        <a class="plus image-popup" href="#">
-                            <i class="lni lni-plus"></i>
-                        </a>
-                    </div>
-                </div> <!-- single project -->
+                </div>
             </div>
         </div> <!-- row -->
     </div> <!-- container fluid -->
