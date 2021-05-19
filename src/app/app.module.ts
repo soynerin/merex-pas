@@ -11,6 +11,7 @@ import { InsurancesComponent } from './insurances/insurances.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { CompaniesComponent } from './companies/companies.component';
 import { FooterComponent } from './footer/footer.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
     InsurancesComponent,
     TestimonialsComponent,
     CompaniesComponent,
-    FooterComponent
+    FooterComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule
