@@ -9,7 +9,7 @@
                             <h2 class="main_title">MEREX PAS</h2>
                         </div> <!-- section title -->
 
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.</p>
+                        <p>Recordá que lo más imporante sos vos y los tuyos, y yo estoy para acompañarte en cada paso que des con confianza y seguridad.</p>
 
                         <div class="single_info d-flex align-items-center mt-30">
                             <div class="info_icon">
@@ -41,16 +41,16 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="footer_form pt-40">
-                        <form id="contact-form">
+                        <form id="contact-form" name="contactMerex" method="POST" data-netlify-recaptcha="true" data-netlify="true">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="single_input mt-30">
-                                        <input type="text" name="name" placeholder="Nombre">
+                                        <input type="text" name="name" placeholder="Nombre" required>
                                     </div> <!-- single input -->
                                 </div>
                                 <div class="col-md-6">
                                     <div class="single_input mt-30">
-                                        <input type="text" name="email" placeholder="Correo Electrónico">
+                                        <input type="text" name="email" placeholder="Correo Electrónico" required>
                                     </div> <!-- single input -->
                                 </div>
                                 <div class="col-md-6">
@@ -60,18 +60,19 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="single_input mt-30">
-                                        <input type="text" name="subject" placeholder="Asunto">
+                                        <input type="text" name="subject" placeholder="Asunto" required>
                                     </div> <!-- single input -->
                                 </div>
                                 <div class="col-md-12">
                                     <div class="single_input mt-30">
-                                        <textarea name="message" placeholder="Mensaje"></textarea>
+                                        <textarea name="message" placeholder="Mensaje" required></textarea>
                                     </div> <!-- single input -->
                                 </div>
                                 <p class="form-message"></p>
+                                <div data-netlify-recaptcha="true"></div>
                                 <div class="col-md-12">
                                     <div class="single_input mt-30">
-                                        <button class="main-btn">ENVIAR</button>
+                                        <button class="main-btn" type="submit">ENVIAR</button>
                                     </div> <!-- single input -->
                                 </div>
                             </div> <!-- row -->
