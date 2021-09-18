@@ -1,0 +1,82 @@
+.pricing_area {
+  position: relative;
+  z-index: 5;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(56, 66, 77, 0.8);
+    z-index: -1;
+  }
+}
+
+.single_pricing {
+  background-color: #fff;
+  padding: 30px;
+
+  .pricing_header {
+    padding-bottom: 20px;
+
+    .sticker {
+      height: 30px;
+      line-height: 30px;
+      padding: 0 15px;
+      background-color: #747e88;
+      color: #fff;
+      border-radius: 50px;
+      font-size: 16px;
+      float: right;
+
+      &.sticker_2 {
+        background-color: #02986a;
+      }
+    }
+
+    .pricing_title {
+      font-size: 30px;
+      font-weight: 700;
+      margin-top: 30px;
+      display: block;
+    }
+
+    .pricing {
+      font-size: 40px;
+      font-weight: 700;
+      color: #02986a;
+      font-family: "Poppins", sans-serif;
+      margin-top: 25px;
+
+      span {
+        color: #747e88;
+      }
+    }
+  }
+
+  .pricing_list {
+    border-top: 1px solid #747e88;
+    padding-top: 10px;
+
+    .list li {
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: 400;
+      color: #747e88;
+      text-align: center;
+    }
+  }
+
+  .pricing_btn {
+    margin-top: 25px;
+
+    .main-btn_2 {
+      background-color: transparent;
+      border: 2px solid #747e88;
+      color: #747e88;
+      line-height: 51px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.single_counter {
+  i {
+    font-size: 60px;
+    line-height: 60px;
+    color: #02986a;
+  }
+
+  .count {
+    font-size: 50px;
+    font-weight: 600;
+    color: #38424d;
+    display: block;
+    margin-top: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+#counter {
+  .title {
+    color: #38424d;
+  }
+  .main_title {
+    color: #38424d;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single_counter i {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .single_counter i {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single_counter .count {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .single_counter .count {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single_counter p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .single_counter p {
+    font-size: 16px;
+  }
+}

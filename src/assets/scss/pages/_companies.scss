@@ -1,0 +1,124 @@
+.single_team {
+  .team_image img {
+    width: 100%;
+  }
+
+  .team_content {
+    position: relative;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(175, 175, 175, 0.16);
+    box-shadow: 0px 5px 15px 0px rgba(175, 175, 175, 0.16);
+    padding: 25px 30px;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+
+    .team_name a {
+      font-size: 24px;
+      font-weight: 700;
+      color: #38424d;
+      -webkit-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s;
+    }
+
+    .sub_title {
+      margin-top: 5px;
+      font-size: 16px;
+      font-weight: 4000;
+      color: #747e88;
+      -webkit-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s;
+    }
+
+    .arrow {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+      font-size: 16px;
+      color: #747e88;
+      -webkit-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s;
+    }
+  }
+
+  &:hover .team_content {
+    background-color: #02986a;
+
+    .team_name a,
+    .sub_title,
+    .arrow {
+      color: #fff;
+    }
+  }
+
+  &:hover .caledonia {
+    background-color: #9ac430;
+
+    h4{
+      color: #0f5e7f;
+    }
+  }
+
+  &:hover .libra {
+    background-color: #fb9010;
+
+    h4{
+      color: #fff;
+    }
+  }
+
+  &:hover .rivadavia {
+    background-color: #01346d;
+
+    h4{
+      color: #fff;
+    }
+  }
+
+  &:hover .rus {
+    background-color: #191397;
+
+    h4{
+      color: #fff;
+    }
+  }
+}
+
+#company {
+  .title {
+    color: #38424d;
+  }
+  .main_title {
+    color: #38424d;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single_team .team_content {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .single_team .team_content {
+    padding: 15px 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single_team .team_content .team_name a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .single_team .team_content .team_name a {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .single_team .team_content .arrow {
+    bottom: 20px;
+    right: 20px;
+  }
+}

@@ -1,0 +1,130 @@
+.about_video {
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  .play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    font-size: 18px;
+    color: #02986a;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+
+    &:hover {
+      background-color: #02986a;
+      color: #fff;
+    }
+  }
+}
+
+.about_content {
+  padding-left: 30px;
+
+  p {
+    padding-top: 20px;
+    border-bottom: 1px solid #747e88;
+    padding-bottom: 25px;
+  }
+
+  .accordion .card {
+    padding: 0;
+    border: 0;
+
+    .card-header {
+      border-bottom: 0;
+      padding: 0;
+      background: none;
+
+      a {
+        font-size: 20px;
+        font-weight: 600;
+        color: #38424d;
+        position: relative;
+        display: block;
+
+        &::before {
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          right: 0;
+          content: "\eb2c";
+          font-family: "LineIcons";
+          font-size: 13px;
+          -webkit-transition: all 0.3s ease-out 0s;
+          transition: all 0.3s ease-out 0s;
+        }
+
+        &.collapsed::before {
+          content: "\eb53";
+        }
+      }
+    }
+
+    .card-body {
+      padding: 25px 0;
+
+      p {
+        border: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+#about {
+  .title {
+    color: #38424d;
+  }
+  .main_title {
+    color: #38424d;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .about_content {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about_content {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .about_content {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .about_content .accordion .card .card-header a {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .about_content .accordion .card .card-header a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about_content .accordion .card .card-header a::before {
+    font-size: 12px;
+  }
+}
