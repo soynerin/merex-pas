@@ -1,15 +1,19 @@
 <section id="footer" class="footer_area">
-    <div class="footer_widget bg_cover pt-80 pb-130" style="background-image: url(assets/img/footer_bg.jpg);">
+    <div class="footer_widget bg_cover pt-80 pb-130" style="background-image: url(assets/img/footer_bg.jpg)">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
                     <div class="footer_info mt-45">
                         <div class="section_title section_title_2">
-                            <h4 class="title">Contacto </h4>
+                            <h4 class="title">Contacto</h4>
                             <h2 class="main_title">MEREX PAS</h2>
-                        </div> <!-- section title -->
+                        </div>
+                        <!-- section title -->
 
-                        <p>Recordá que lo más imporante sos vos y los tuyos, y yo estoy para acompañarte en cada paso que des con confianza y seguridad.</p>
+                        <p>
+                            Recordá que lo más imporante sos vos y los tuyos, y yo estoy para
+                            acompañarte en cada paso que des con confianza y seguridad.
+                        </p>
 
                         <div class="single_info d-flex align-items-center mt-30">
                             <div class="info_icon">
@@ -18,7 +22,8 @@
                             <div class="info_content media-body">
                                 <p>+54 11 32088788</p>
                             </div>
-                        </div> <!-- single info -->
+                        </div>
+                        <!-- single info -->
 
                         <div class="single_info d-flex align-items-center mt-30">
                             <div class="info_icon">
@@ -27,76 +32,126 @@
                             <div class="info_content media-body">
                                 <p>saucedo.mariadolores@gmail.com</p>
                             </div>
-                        </div> <!-- single info -->
+                        </div>
+                        <!-- single info -->
 
                         <div class="single_info d-flex align-items-center mt-30">
                             <div class="info_icon">
                                 <I class="lni lni-map-marker"></I>
                             </div>
                             <div class="info_content media-body">
-                                <p>Buenos Aires <br> Pilar - Del Viso</p>
+                                <p>
+                                    Buenos Aires <br />
+                                    Pilar - Del Viso
+                                </p>
                             </div>
-                        </div> <!-- single info -->
-                    </div> <!-- footer info -->
+                        </div>
+                        <!-- single info -->
+                    </div>
+                    <!-- footer info -->
                 </div>
                 <div class="col-lg-7">
                     <div class="footer_form pt-40">
-                        <form id="contact-form" name="contactMerex" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+                        <form name="contact" method="POST" data-netlify="true">
+                            <p>
+                                <label>Your Name: <input type="text" name="name" /></label>
+                            </p>
+                            <p>
+                                <label>Your Email: <input type="email" name="email" /></label>
+                            </p>
+                            <p>
+                                <label>Your Role:
+                                    <select name="role[]" multiple>
+                                        <option value="leader">Leader</option>
+                                        <option value="follower">Follower</option>
+                                    </select></label>
+                            </p>
+                            <p>
+                                <label>Message: <textarea name="message"></textarea></label>
+                            </p>
+                            <p>
+                                <button type="submit">Send</button>
+                            </p>
+                        </form>
+                        <!-- <form id="contact-form" name="contact" method="POST" data-netlify="true">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="single_input mt-30">
                                         <input type="text" name="name" placeholder="Nombre" required>
-                                    </div> <!-- single input -->
+                                    </div> 
                                 </div>
                                 <div class="col-md-6">
                                     <div class="single_input mt-30">
                                         <input type="text" name="email" placeholder="Correo Electrónico" required>
-                                    </div> <!-- single input -->
+                                    </div> 
                                 </div>
                                 <div class="col-md-6">
                                     <div class="single_input mt-30">
                                         <input type="text" name="phone" placeholder="Teléfono">
-                                    </div> <!-- single input -->
+                                    </div> 
                                 </div>
                                 <div class="col-md-6">
                                     <div class="single_input mt-30">
                                         <input type="text" name="subject" placeholder="Asunto" required>
-                                    </div> <!-- single input -->
+                                    </div> 
                                 </div>
                                 <div class="col-md-12">
                                     <div class="single_input mt-30">
                                         <textarea name="message" placeholder="Mensaje" required></textarea>
-                                    </div> <!-- single input -->
+                                    </div> 
                                 </div>
                                 <p class="form-message"></p>
-                                <div data-netlify-recaptcha="true"></div>
+
                                 <div class="col-md-12">
                                     <div class="single_input mt-30">
                                         <button class="main-btn" type="submit">ENVIAR</button>
-                                    </div> <!-- single input -->
+                                    </div> 
                                 </div>
-                            </div> <!-- row -->
-                        </form>
-                    </div> <!-- footer form -->
+                            </div> 
+                        </form> -->
+                    </div>
+                    <!-- footer form -->
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-    </div> <!-- footer widget -->
-    
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+    </div>
+    <!-- footer widget -->
+
     <div class="footer_copyright">
         <div class="container">
-            <div class="footer_copyright_wrapper text-center d-sm-flex justify-content-between align-items-center">
+            <div class="
+          footer_copyright_wrapper
+          text-center
+          d-sm-flex
+          justify-content-between
+          align-items-center
+        ">
                 <div class="copyright mt-15">
-                    <p>Developed by <a style="color: #02986A;" href="https://soynerin.github.io/" rel="nofollow" target="_blank">soyNerin</a></p>
+                    <p>
+                        Developed by
+                        <a style="color: #02986a" href="https://soynerin.github.io/" rel="nofollow"
+                            target="_blank">soyNerin</a>
+                    </p>
                 </div>
                 <div class="footer_social mt-15">
                     <ul>
-                        <li><a href="https://www.facebook.com/MerexPAS-102130001616112" target="_blank" rel="noreferrer"><i class="lni lni-facebook-filled"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/maria-dolores-saucedo" target="_blank" rel="noreferrer"><i class="lni lni-linkedin-original"></i></a></li>
-                        <li><a href="https://www.instagram.com/merex.pas" target="_blank" rel="noreferrer"><i class="lni lni-instagram-original"></i></a></li>
+                        <li>
+                            <a href="https://www.facebook.com/MerexPAS-102130001616112" target="_blank"
+                                rel="noreferrer"><i class="lni lni-facebook-filled"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/maria-dolores-saucedo" target="_blank"
+                                rel="noreferrer"><i class="lni lni-linkedin-original"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/merex.pas" target="_blank" rel="noreferrer"><i
+                                    class="lni lni-instagram-original"></i></a>
+                        </li>
                     </ul>
                 </div>
-            </div> 
-        </div> 
-    </div> 
+            </div>
+        </div>
+    </div>
 </section>
